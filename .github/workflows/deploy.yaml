@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '22'
+          registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependencies
         run: npm install
@@ -27,9 +28,7 @@ jobs:
       - name: Test project
         run: npm run test:e2e
 
-      - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Publish to npm
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
