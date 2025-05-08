@@ -6,7 +6,21 @@
 
 Este projeto serve como base para a criação de ferramentas de linha de comando utilizando o ecossistema NestJS. A aplicação permite criar novos recursos e configurar opções de maneira simples e modular.
 
-## 🚀 Instalação
+## Como Usar
+
+É necessário ter o Node.js 22 instalado. Em seguida, instale o CLI globalmente:
+
+```bash
+npm i -g @hcode/hcoder
+```
+
+Depois, basta usar o comando:
+
+```bash
+hcoder
+```
+
+## 🚀 Instalação de Desenvolvimento
 
 Clone o repositório e instale as dependências:
 
