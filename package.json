@@ -5,6 +5,9 @@
   "author": "",
   "private": false,
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "hcoder": "./dist/main.js"
   },
