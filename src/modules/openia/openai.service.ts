@@ -58,6 +58,8 @@ export class OpenaiService implements OnModuleInit {
     let assistantId = await this.config.get(ConfigEnum.ASSISTANT_ID);
 
     if (!assistantId) {
+      console.log('Template PATH', join(__dirname, 'openia.assistant.md'));
+
       const prompt = await readFile(
         join(__dirname, 'openia.assistant.md'),
         'utf-8',
