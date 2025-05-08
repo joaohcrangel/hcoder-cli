@@ -11,6 +11,7 @@ import { GitModule } from './modules/git/git.module';
 import { PackageModule } from './modules/package/package.module';
 import { CommandNewSubCommand } from './commands/new/command-new.sub-command';
 import { OpenaiModule } from './modules/openia/openai.module';
+import { VersionCommand } from './commands/version.command';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { OpenaiModule } from './modules/openia/openai.module';
     NewCommand,
     ProjectNewSubCommand,
     CommandNewSubCommand,
+    VersionCommand,
   ],
 })
 export class AppModule {}

@@ -6,7 +6,7 @@ import { readFile, writeFile } from 'fs/promises';
 import { ResponseCommandFileType } from '../../types/response-command-file.type';
 
 @SubCommand({
-  name: 'commnd',
+  name: 'command',
   description: 'Gerar novos comandos',
   aliases: ['cmd', 'c'],
   arguments: '<name> <prompt>',
